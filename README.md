@@ -1,4 +1,4 @@
-packer-centos7
-==============
+box-packer
+==========
 
-CentOS 7 Packer Template
+Packer templates based on [Bento](https://github.com/opscode/bento) with some useful additions.
