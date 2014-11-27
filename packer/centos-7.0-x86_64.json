@@ -63,6 +63,7 @@
         "scripts/centos/yum-update.sh",
         "scripts/common/bindfs.sh",
         "scripts/centos/set-timezone.sh",
+        "scripts/centos/install-git.sh",
         "scripts/centos/cleanup.sh",
         "scripts/common/minimize.sh"
       ],
