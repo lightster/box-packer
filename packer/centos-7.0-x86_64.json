@@ -62,6 +62,7 @@
         "scripts/common/chef.sh",
         "scripts/centos/yum-update.sh",
         "scripts/common/bindfs.sh",
+        "scripts/centos/set-timezone.sh",
         "scripts/centos/cleanup.sh",
         "scripts/common/minimize.sh"
       ],
