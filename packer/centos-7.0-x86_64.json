@@ -39,7 +39,7 @@
   ],
   "post-processors": [
     {
-      "output": "builds/{{.Provider}}/vagrant-centos-7.0-20141120-01.box",
+      "output": "builds/{{.Provider}}/vagrant-centos-7.0-20150328-01.box",
       "type": "vagrant"
     }
   ],
