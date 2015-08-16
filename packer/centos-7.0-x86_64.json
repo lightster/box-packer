@@ -51,7 +51,6 @@
     },
     {
       "environment_vars": [
-        "CHEF_VERSION={{user `chef_version`}}"
       ],
       "execute_command": "echo 'vagrant' | {{.Vars}} sudo -S -E bash '{{.Path}}'",
       "scripts": [
@@ -68,7 +67,6 @@
     }
   ],
   "variables": {
-    "chef_version": "provisionerless",
     "mirror": "http://mirrors.kernel.org/centos"
   }
 }
