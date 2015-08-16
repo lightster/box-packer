@@ -39,7 +39,7 @@
   ],
   "post-processors": [
     {
-      "output": "builds/{{.Provider}}/vagrant-centos-7.0-20150328-01.box",
+      "output": "builds/{{.Provider}}/vagrant-centos-7-{{user `build_number`}}.box",
       "type": "vagrant"
     }
   ],
@@ -51,6 +51,7 @@
     },
     {
       "environment_vars": [
+        "BUILD_NUMBER={{user `build_number`}}"
       ],
       "execute_command": "echo 'vagrant' | {{.Vars}} sudo -S -E bash '{{.Path}}'",
       "scripts": [
@@ -60,6 +61,7 @@
         "scripts/common/vmtools.sh",
         "scripts/centos/yum-update.sh",
         "scripts/centos/bindfs.sh",
+        "scripts/common/build-number.sh",
         "scripts/centos/cleanup.sh",
         "scripts/common/minimize.sh"
       ],
@@ -67,6 +69,7 @@
     }
   ],
   "variables": {
+    "build_number": "20150815-01",
     "mirror": "http://mirrors.kernel.org/centos"
   }
 }
