@@ -60,7 +60,7 @@
         "scripts/common/vagrant.sh",
         "scripts/common/vmtools.sh",
         "scripts/centos/yum-update.sh",
-        "scripts/common/bindfs.sh",
+        "scripts/centos/bindfs.sh",
         "scripts/centos/cleanup.sh",
         "scripts/common/minimize.sh"
       ],
