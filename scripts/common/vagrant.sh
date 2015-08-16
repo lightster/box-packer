@@ -8,3 +8,5 @@ chown -R vagrant /home/vagrant/.ssh
 chmod -R go-rwsx /home/vagrant/.ssh
 
 cp -r /home/vagrant/.ssh /root
+
+useradd -G wheel boxkeeper
